@@ -16,10 +16,16 @@ O objetivo desta tarefa é capacitar os participantes a projetar, implementar e 
 
 Exemplo de Código para a Função Lambda de Criação (createItem):
 https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/post.js 
+
+
 Exemplo de Código para a Função Lambda de Leitura (getItem):
 https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/get.js 
+
+
 Exemplo de Código para a Função Lambda de Atualização (updateItem):
 https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/put.js 
+
+
 Exemplo de Código para a Função Lambda de Exclusão (deleteItem):
 https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/delete.js 
 
