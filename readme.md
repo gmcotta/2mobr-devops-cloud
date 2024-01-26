@@ -1,5 +1,46 @@
 # Desenvolvimento de uma aplicação Serverless na AWS
 
+## Objetivo:
+O objetivo desta tarefa é capacitar os participantes a projetar, implementar e testar uma aplicação serverless utilizando os serviços AWS, incluindo o API Gateway, AWS Lambda e um banco de dados NoSQL para realizar operações CRUD simples, sem a utilização do AWS SAM. Todavia caso queiram utilizar a estrutura utilizando o AWS SAM aqui esta a documentação: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-reference.html 
+
+### Descrição da Tarefa:
+#### Parte 1: Configuração do Ambiente
+1. Criar uma conta AWS e configurar permissões necessárias para o desenvolvimento na AWS.
+2. Configurar o AWS CLI e outras ferramentas necessárias para o desenvolvimento serverless.
+
+#### Parte 2: Desenvolvimento da API Serverless
+1. Criar um projeto na AWS Console para a aplicação serverless.
+2. Configurar um API Gateway com pelo menos três recursos (endpoints) para operações CRUD.
+3. Implementar funções serverless usando o AWS Lambda, manualmente associando cada função aos recursos criados no API Gateway.
+4. Fornecer o código fonte das funções Lambda responsáveis pelas operações CRUD.
+
+Exemplo de Código para a Função Lambda de Criação (createItem):
+https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/post.js 
+Exemplo de Código para a Função Lambda de Leitura (getItem):
+https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/get.js 
+Exemplo de Código para a Função Lambda de Atualização (updateItem):
+https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/put.js 
+Exemplo de Código para a Função Lambda de Exclusão (deleteItem):
+https://github.com/rperucchi/terraform_estudo_aula2/blob/main/0001-serverless-pattern-rest-api/delete.js 
+
+*atenção ao normalizador e tratamento de response.
+
+#### Parte 3: Conexão com o Banco de Dados NoSQL
+1. Escolher um serviço de banco de dados NoSQL na AWS (por exemplo, DynamoDB) e criar manualmente a tabela necessária para armazenar os dados da aplicação.
+2. Configurar as permissões necessárias para que as funções serverless possam acessar o banco de dados.
+3. Integrar manualmente as funções serverless com o banco de dados para realizar operações CRUD na tabela criada.
+4. Fornecer o código fonte que realiza a integração com o banco de dados.
+
+
+#### Parte 4: Testes e Documentação
+1. Evidenciar os testes na AWS Console para as operações CRUD da aplicação serverless.
+2. Evidenciar o processo de desenvolvimento na AWS Console, incluindo a configuração da API, funções Lambda, banco de dados e permissões.
+3. Fornecer evidencias detalhadas do código fonte, explicando as partes relevante das funções Lambda e da integração com o banco de dados.
+ 
+#### Parte 5: Implantação e Demonstração
+1. Implantar a aplicação serverless na AWS Console, seguindo as configurações feitas durante o desenvolvimento.
+2. Evidenciar a aplicação na AWS Console, destacando as funcionalidades CRUD e explicando a arquitetura implementada.
+
 ## Arquitetura da aplicação
 
 ![Intro](./imgs/intro.png)
